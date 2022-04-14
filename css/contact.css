@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+body {
+    margin: 0;
+    background-color: #ffffff  ;
+    min-width: 820px;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color:  #fbfcfc;
+}
+
+div {
+    display: flex;
+}
+
+span {
+    text-align: center;
+}
+
+/*.....................................................*/
+/*Contenu de la page*/
+
+.contentwrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contentwrapper .contenttitle {
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: -37px;
+}
+
+.contentwrapper .content {
+    font-family: 'OutfitL', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+
+.contentwrapper .content form{
+    flex-direction: column;
+    align-self: center;
+    width: 82%;
+    font-family: 'OutfitL', sans-serif;
+    padding : 35px 40px 25px 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border: 2px solid #000;
+}
+
+.contentwrapper .content .information {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+.contentwrapper .error_msg {
+    color: red;
+    font-size: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.contentwrapper .content .information input {
+    width: 300px;
+    height: 30px;
+}
+
+.contentwrapper .content .information .item {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contentwrapper .content .information .item p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contentwrapper .content .information .item .label {
+    width: 90%;
+    padding-left: 10px;
+    flex-direction: column;
+}
+
+.contentwrapper .content .information .item .label div {
+    padding-top: 15px;
+}
+
+.contentwrapper .content .information .item select {
+    width: 300px;
+    height: 30px;
+}
+
+.contentwrapper .content .information .item .invalid {
+    border: solid 2px rgba(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.contentwrapper .content .information .item .label input {
+    width: 20px;
+    height: 20px;
+    padding-left: 15px;
+    align-self: center;
+}
+
+.contentwrapper .content .information .item .label .invalid {
+    background-color: rgba(255, 0, 0, 0.3);
+    width: 20px;
+    height: 20px;
+    padding-left: 15px;
+    align-self: center;
+}
+
+.contentwrapper .content .information .item .label p{
+    padding-left: 10px;
+}
+
+.contentwrapper .content .information .leftinfo {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 40px;
+    width: 50%;
+}
+
+.contentwrapper .content .information .rightinfo {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 10px;
+    width: 50%;
+}
+
+.contentwrapper .content .submitbutton {
+    margin-top: 25px;
+
+    justify-content: center;
+}
+
+.contentwrapper .content .submitbutton .input {
+    font-size: 20px;
+    color: #fff;
+    padding: 20px 100px 20px 100px;
+    background-color: #0087ca;
+    border: 2px solid #252221;
+    border-radius: 5px;
+}
+
+/*.....................................................*/
+/*Pied de page*/
+
+.footerwrapper{
+    position: relative;
+    bottom: 0;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    position : absolute;
+    color:  #fbfcfc;
+    background-color: #252221;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}

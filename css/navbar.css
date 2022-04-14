@@ -1,0 +1,101 @@
+/*.....................................................*/
+/*Barre de navigation*/
+
+.navwrapper {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    color:  #fbfcfc;
+    font-family: 'Outfit', sans-serif;
+    height: 120px;
+    width: 100%;
+    background-color: #252221;
+    border-top: 3px solid #fbfcfc;
+    border-bottom: 3px solid #fbfcfc;
+    min-width: 820px;
+}
+
+.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    height: 100%;
+}
+
+.navbar .banner {
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 55px;
+}
+
+.navbar .banner .navlogo {
+    height: 70px;
+    padding-left:17px ;
+}
+
+.navbar .banner .navtitle {
+    margin-left: 17px;
+    padding : 3px 10px;
+    text-transform: uppercase;
+    font-family: 'Caesar Dressing', cursive;
+}
+
+@media only screen and (max-width: 1250px) {
+    .navbar .banner .navtitle {
+      width: 250px;
+      padding-left: 15px;
+      font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .navbar .banner .navtitle {
+      font-size: 45px;
+    }
+}
+
+.navbar .navlinks {
+    justify-content: flex-end;
+    width: 40%;
+    font-size: 25px;
+}
+
+.navbar .navlinks a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar .navlinks span {
+    text-transform: uppercase;
+}
+
+/*Souslignage des liens de la barre de navigation*/
+.navbar .navlinks .underline_current {
+    text-decoration: underline 4px #0087ca;
+}
+
+.navbar .navlinks .underline {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .navlinks .underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar .navlinks .underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

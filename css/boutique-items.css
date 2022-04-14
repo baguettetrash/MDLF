@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #ffffff  ;
+    min-width: 820px;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color:  #fbfcfc;
+}
+
+div {
+    display: flex;
+}
+
+span {
+    text-align: center;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+/*.....................................................*/
+/*Body*/
+
+.bodywrapper {
+    flex-direction: row;
+    width: 100%;
+}
+
+/*Barre de navigation latéral*/
+.bodywrapper .sidebar {
+    flex-direction: column;
+    position: fixed;
+    margin-top: 124px;
+    font-family: 'Cinzel', serif;
+    width: 360px;
+    height: 100%;
+    border-top: 2px solid #fff; 
+    background-color: #445c88;
+}
+
+.bodywrapper .sidebar .menu {
+    flex-direction: column;
+}
+
+.bodywrapper .sidebar .menu h2{
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 32.5px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.bodywrapper .sidebar .menu ul li{
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    border-top: 2px solid rgba(225,225,225,0.1);
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.bodywrapper .sidebar .menu ul li:hover{
+    background-color: #1c2a58;
+}
+
+.bodywrapper .sidebar .menu a{
+    padding: 15px;
+    padding-left: 30px;
+    color: rgb(221, 221, 221);
+    display: block;
+}
+
+.bodywrapper .sidebar .menu a:hover{
+    color: #fff;
+}
+
+.bodywrapper .sidebar .footer {
+    color: rgb(191, 191, 192);
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    margin-top: 500px;
+}
+
+/*Contenu de la page*/
+.bodywrapper .contentwrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-family: 'Cinzel', serif;
+
+    background-size: cover;
+    background: url("../img/rift.jpg");
+    background-color: #fff;
+
+    padding: 20px;
+    margin-top: 120px;
+    padding-bottom: 180px;
+    margin-left: 360px;
+    border-left: 3px solid #fff;
+}
+
+.bodywrapper .contentwrapper .contenttitle {
+    color: #fff;
+    font-family: 'Cinzel', serif;
+    background-color: rgba(102, 104, 112, 0.95);
+    text-align: center;
+    align-self: center;
+    font-size: 30px;
+    padding: 5px 30px 5px 30px;
+    border: 1px solid #fff;
+}
+
+.bodywrapper .contentwrapper .items_table {
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.bodywrapper .contentwrapper .items_table table {
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.bodywrapper .contentwrapper .items_table .thead {
+    border: 2px solid #fff;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bodywrapper .contentwrapper .items_table .thead td {
+    height: 50px;
+}
+
+.bodywrapper .contentwrapper .items_table tr {
+    border: 2px solid #fff;
+}
+
+.bodywrapper .contentwrapper .items_table td {
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: rgba(102, 104, 112, 0.9);
+}
+
+.bodywrapper .contentwrapper .items_table .quantity_text {
+    justify-content: center;
+    margin-top: 2px;
+    padding: 5px;
+}
+
+.bodywrapper .contentwrapper .items_table .quantity_control {
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.bodywrapper .contentwrapper .items_table .quantity_control button {
+    border: solid 1px #000;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-bottom: 2px;
+}
+
+.bodywrapper .contentwrapper .items_table .quantity_control .indispo{
+    background-color: #585858;
+    padding: 0 5px 0 5px;
+}
+
+.bodywrapper .contentwrapper .items_table .quantity_control .dispo{
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0 5px 0 5px;
+}
+
+/*
+.bodywrapper .contentwrapper .items_table .image {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}*/
+
+.bodywrapper .contentwrapper .items_table .prix {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid #fff; 
+    font-size: 20px;
+    color: rgb(240, 210, 39);
+    font: bold;
+}
+
+.bodywrapper .contentwrapper .items_table img {
+    border: 1.5px solid #fff;
+    cursor: pointer;
+}
+
+.bodywrapper .contentwrapper .items_table .hidden-element {
+    display: none;
+}
+
+.bodywrapper .contentwrapper .addToPanier {
+    justify-content: center;
+}
+
+.bodywrapper .contentwrapper .addToPanier .register_button{
+    align-self: center;
+    padding: 10px 20px 10px 20px;
+    height:50px;
+    width: 250px;
+    border: 1.5px solid #000;
+    background-color: rgb(209, 177, 34);
+    border-radius: 5px;
+    display: none;
+}
+
+.bodywrapper .contentwrapper .button-content {
+    margin-top: 5px;
+}
+
+.bodywrapper .contentwrapper .button-content .stockbutton {
+    padding: 10px 20px 10px 20px;
+    height:50px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1.5px solid #000;
+}
+
+/*----------------------------------------------------------------------*/
+
+.hidden-window {
+    display: none;
+    position: fixed;
+    z-index: 1; /*En avant*/
+    padding-top: 20%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Page complète */
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    transition: all 0.15s ease 0s;
+}
+
+.hidden-window .hidden-content {
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    margin: auto;
+    padding:  15px 20px 20px 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 260px;
+    height: 300px;
+    overflow: auto;
+}
+
+.hidden-window .hidden-content {
+    flex-direction: column;
+}
+
+/* The Close Button */
+.hidden-window .hidden-content .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    width: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hidden-window .hidden-content .close:hover {
+    color: #000000;
+}
+
+.modal-fenetre .modal-content #hidden-img {
+    justify-content: center;
+}

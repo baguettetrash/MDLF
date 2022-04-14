@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+body {
+    margin: 0;
+    background-color: #ffffff  ;
+    min-width: 820px;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color:  #fbfcfc;
+}
+
+div {
+    display: flex;
+}
+
+span {
+    text-align: center;
+}
+
+/*.....................................................*/
+/*Contenu de la page*/
+
+.contentwrapper {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    padding-top: 12%;
+}
+
+.connexion{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 12%;
+}
+
+.inscription{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contenttitle {
+    font-family: 'Cinzel', serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.content {
+    font-family: 'OutfitL', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    border: 2px solid #000;
+}
+
+.connexion .content{
+    padding-top: 13%;
+    padding-bottom: 13%;
+}
+
+.content form{
+    flex-direction: column;
+    align-self: center;
+    width: 82%;
+    font-family: 'OutfitL', sans-serif;
+
+}
+
+.content .item {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content .item p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content .item input {
+    width: 150px;
+}
+
+.content .submitbutton {
+    margin-top: 10px;
+}
+
+/*.....................................................*/
+/*Pied de page*/
+
+.footerwrapper{
+    position: relative;
+    bottom: 0;
+    padding-top: 15%;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    position : absolute;
+    color:  #fbfcfc;
+    background-color: #252221;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}

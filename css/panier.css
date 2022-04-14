@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+body {
+    margin: 0;
+    background-color: #ffffff  ;
+    min-width: 820px;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color:  #fbfcfc;
+}
+
+div {
+    display: flex;
+}
+
+span {
+    text-align: center;
+}
+
+/*.....................................................*/
+/*Contenu de la page*/
+
+.accueil{
+    padding-top: 12%;
+}
+
+/*.....................................................*/
+/*Pied de page*/
+
+.footerwrapper{
+    position: relative;
+    bottom: 0;
+    padding-top: 40%;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    position : absolute;
+    color:  #fbfcfc;
+    background-color: #252221;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}

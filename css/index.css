@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+body {
+    margin: 0;
+    background-color: #ffffff  ;
+    min-width: 820px;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+    color:  #fbfcfc;
+}
+
+div {
+    display: flex;
+}
+
+span {
+    text-align: center;
+}
+
+/*.....................................................*/
+/*Contenu de la page*/
+
+.contentwrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contentwrapper .background_display {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentwrapper .contenttitle {
+    padding-top: 30px;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1150px) {
+    .contentwrapper .contenttitle {
+      width: 550px;
+    }
+}
+
+.contentwrapper .content {
+    font-family: 'OutfitL', sans-serif;
+    font-size: 20px;
+    flex-direction: column;
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 45px;
+    padding-top: 15px;
+}
+
+.contentwrapper .content .return_button {
+    width: 300px;
+    align-self: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: 'OutfitL', sans-serif;
+    font-size: 16px;
+}
+
+/*.....................................................*/
+/*Pied de page*/
+
+.footerwrapper{
+    position: relative;
+    bottom: 0;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    position : absolute;
+    color:  #fbfcfc;
+    background-color: #252221;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}
